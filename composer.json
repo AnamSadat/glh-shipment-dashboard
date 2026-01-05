@@ -51,6 +51,10 @@
             "Composer\\Config::disableProcessTimeout",
             "pnpm exec concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"pnpm run dev\" --names=server,queue,vite --kill-others"
         ],
+        "dev:nq": [
+            "Composer\\Config::disableProcessTimeout",
+            "pnpm exec concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"pnpm run dev\" --names=server,vite --kill-others"
+        ],
         "dev:ssr": [
             "npm run build:ssr",
             "Composer\\Config::disableProcessTimeout",
